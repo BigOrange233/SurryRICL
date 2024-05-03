@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hazard_array">
+        <item>""</item>
+        <item>Low</item>
+        <item>Moderate</item>
+        <item>High</item>
+    </string-array>
+</resources>

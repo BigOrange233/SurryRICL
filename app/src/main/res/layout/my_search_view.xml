@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <SearchView
+            android:id="@+id/sv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/cb_fav"
+            android:text="@string/is_fav"
+            android:checked="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/critical_number"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_number"
+            android:minWidth="40dp"
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:layout_height="wrap_content"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hazard_level"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/sp_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/hazard_array"></Spinner>
+    </LinearLayout>
+
+</LinearLayout>
